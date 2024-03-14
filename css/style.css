@@ -1,0 +1,182 @@
+
+
+body{
+    background-color: #C5FFF8;
+}
+
+.first-slide{
+
+    background: white;
+}
+
+[hidden] {
+    display: inherit !important;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight30 {
+    0% {
+        transform: translateX(30px);
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(150px);
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ScaleFromLittleToBig {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.15;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom30 {
+    0% {
+        transform: translateY(30px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom150 {
+    0% {
+        transform: translateY(150px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.right-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+.right30-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromRight30;
+}
+
+.top-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+
+.bottom30-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromBottom30;
+}
+
+.bottom150-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromBottom150;
+}
+
+.image-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+.nav-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
+}
+
+.left-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+.bottom-animation{
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
+}
+
+.scale-animation{
+    animation: 0.5s ease-out 0s 1 ScaleFromLittleToBig;
+}
+
+
+.reveal-bottom{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal-bottom.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-right{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal-right.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal-scaleFromLittleToBig{
+    transform: scale(0.7);
+    transition: 0.7s all ease;
+}
+
+.reveal-scaleFromLittleToBig.active{
+    transform: scale(1);
+}
+
+.reveal-left{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal-left.active{
+    transform: translateX(0);
+    opacity: 1;
+}
